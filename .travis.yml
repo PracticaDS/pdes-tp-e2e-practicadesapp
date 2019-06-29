@@ -10,9 +10,11 @@ script:
   - git clone https://github.com/PracticaDS/pdes-tp-backend-practicadesapp
   - git clone https://github.com/PracticaDS/pdes-tp-practicadesapp
   - cd pdes-tp-backend-practicadesapp
+  - yarn install
   - yarn start
   - cd ..
   - cd pdes-tp-practicadesapp
+  - yarn install
   - yarn start
   - cd ..
   - docker-compose up -d
