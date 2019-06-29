@@ -8,7 +8,7 @@ env:
 cache: yarn
 script:
   - git clone https://github.com/PracticaDS/pdes-tp-backend-practicadesapp
-  - git clone clone https://github.com/PracticaDS/pdes-tp-practicadesapp
+  - git clone https://github.com/PracticaDS/pdes-tp-practicadesapp
   - cd pdes-tp-backend-practicadesapp
   - yarn start
   - cd ..
