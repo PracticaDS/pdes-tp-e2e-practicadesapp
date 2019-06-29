@@ -7,9 +7,15 @@ env:
   - CYPRESS_baseUrl=http://localhost
 cache: yarn
 script:
-  - yarn run cloneAll
+  - git clone https://github.com/PracticaDS/pdes-tp-backend-practicadesapp
+  - git clone clone https://github.com/PracticaDS/pdes-tp-practicadesapp
+  - cd pdes-tp-backend-practicadesapp
+  - yarn start
+  - cd ..
+  - cd pdes-tp-practicadesapp
+  - yarn start
+  - cd ..
   - docker-compose up -d
-  - yarn run waitForServer
   - yarn run cypress:run
   - docker-compose down
   - yarn run clean
