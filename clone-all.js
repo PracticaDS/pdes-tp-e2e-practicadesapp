@@ -7,5 +7,5 @@ if (!fs.existsSync(dir)){
 
 const { execSync } = require("child_process");
 
-execSync("git clone https://github.com/PracticaDS/pdes-tp-backend-practicadesapp cloned-repos/todos-backend")
-execSync("git clone https://github.com/PracticaDS/pdes-tp-practicadesapp cloned-repos/todos-frontend")
+execSync("git clone https://github.com/PracticaDS/pdes-tp-backend-practicadesapp cloned-repos/pdes-tp-backend-practicadesapp")
+execSync("git clone https://github.com/PracticaDS/pdes-tp-practicadesapp cloned-repos/pdes-tp-practicadesapp")
