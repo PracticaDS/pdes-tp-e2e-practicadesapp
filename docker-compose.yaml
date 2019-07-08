@@ -19,8 +19,10 @@ services:
     - REACT_APP_BACKEND_URL=/api
   backend:
     build: "./cloned-repos/pdes-tp-backend-practicadesapp/"
+    depends_on:
+    - mongodb
     environment: 
-    - MONGO_URL=mongodb://localhost/tp
+    - MONGO_URL=mongodb://mongodb/tp
     - NODE_ENV=production
     labels:
     - traefik.frontend.rule=PathPrefix:/api
